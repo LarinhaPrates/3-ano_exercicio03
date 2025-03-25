@@ -2,7 +2,19 @@ $corPrincipal: #69B99D;
 $qudradoDeTras: #CCF4E6;
 $coresDoTitulo: #0F241D;
 $corDoTexto: #767676; 
+$fontePrincipal: Poppins, sans-serif;
+$fonteTitulo: DM Sans, sans-serif;
 
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 span{
-    background-color: $corPrincipal;
+    color: $corPrincipal;
+}
+
+h1{
+    color: $coresDoTitulo;
+    font-family: $fontePrincipal;
 }
