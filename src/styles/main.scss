@@ -5,16 +5,41 @@ $corDoTexto: #767676;
 $fontePrincipal: Poppins, sans-serif;
 $fonteTitulo: DM Sans, sans-serif;
 
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+
 span{
     color: $corPrincipal;
 }
 
-h1{
+h2{
     color: $coresDoTitulo;
     font-family: $fontePrincipal;
+    font-size: 1em;
+    margin-left: 5em;
+    
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -0.7em;
+}
+
+.row{
+    display: flex;
+    margin-right: 10em;
+    font-family: $fonteTitulo;
+    font-size: 0.7em;
+}
+
+.boxHeader{
+    margin: 1em;
+
+}
+
+.linha{
+    width: 100%;
+    height: 0.5px;
+    background-color: $coresDoTitulo;
+    margin-top: 0.3px;
 }
