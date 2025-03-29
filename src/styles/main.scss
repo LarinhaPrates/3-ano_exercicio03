@@ -6,6 +6,7 @@ $fontePrincipal: Poppins, sans-serif;
 $fonteTitulo: DM Sans, sans-serif;
 $corDoTextoDoButton: #F9F9F9;
 $corDeFundo1: #FFFFFF;
+$corDeFundo2: #E4E4E4;
 
 
 *{
@@ -38,6 +39,7 @@ header{
     align-items: center;
     justify-content: space-between;
     border-bottom: 0.1px solid $coresDoTitulo;
+    background-color: $corDeFundo2;
 }
 
 .opcoes{
@@ -55,7 +57,7 @@ header{
 
 .boxtexto{
     display: flex;
-    width: 100%;
+    width: 50%;
     height: 35em;
     justify-content: center;
     align-items: center;
@@ -100,11 +102,15 @@ button{
     border: none;
     border-radius: 4px;
     font-size: 1em;
+    text-align: center;
 }
 .boxPrincipal{
     display: flex;
-    align-items: center;
     justify-content: center;
+    text-align: center;
+    background-color: $corDeFundo2;
+    width: 100%;
+    border-bottom: 0.1px solid $corPrincipal;
 }
 .boximagem{
     display: flex;
@@ -136,6 +142,8 @@ img{
 
 .boxCentro{
     display: flex;
+    margin-top: 1em;
+    border-bottom: 0.1px solid $corPrincipal;
 }
 
 .boxEsquerda{
@@ -183,6 +191,8 @@ img{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: $corDeFundo2;
+    border-bottom: 0.1px solid $corPrincipal;
 }
 
 .boxdecima{
@@ -264,6 +274,7 @@ h5{
     height: 50%;
     margin-top: 3em;
     flex-direction: column;
+    border-bottom: 0.1px solid $corPrincipal;
 }
 
 .box_Comentario{
@@ -283,7 +294,7 @@ h5{
     justify-content: center;
     align-items: center;
     margin-top: 2em;
-    margin-right: 10em;
+
 }
 
 .SubTitulo{
@@ -313,9 +324,73 @@ h5{
 }
 
 .comentario{
-    width: 25em;
-    height: 50em;
     display: flex;
     margin-top: 9px;
     margin-left: 3px;
+    text-align: center;
+}
+
+.pontinhos{
+    width: 4em;
+    height: 1em;
+    display: flex;
+    margin-top: 4em;
+    margin-left: 3em;
+}
+
+.whats{
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+.icon-whatsapp:before {
+    content: "\ea93";
+    background-color: $corDeFundo1;
+}
+.boxRedesSociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 35em;
+    flex-direction: column;
+}
+
+.telefone{
+    margin-bottom: 2em;
+}
+
+.loc{
+    margin-bottom: 2em;
+}
+
+footer{
+    background-color: $corPrincipal;
+    width: 100%;
+    height: 35%;
+    display: flex;
+}
+
+.textoFooter{
+    color: $corDeFundo1;
+}
+
+.final{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.boxesquerda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25em;
+    height: 10em;
+    flex-direction: column;
+}
+
+.textodofooter{
+    color: $corDeFundo1;
+    margin-bottom: 3px;
 }
