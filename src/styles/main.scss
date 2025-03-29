@@ -338,6 +338,7 @@ h5{
     display: flex;
     margin-top: 4em;
     margin-left: 3em;
+    margin-bottom: 1em;
 }
 
 .whats{
@@ -348,7 +349,37 @@ h5{
 
 .icon-whatsapp:before {
     content: "\ea93";
-    background-color: $corDeFundo1;
+    color: $corDeFundo1;
+    margin-right: 10px;
+}
+
+.icon-location:before {
+    content: "\e947";
+    color: $corPrincipal;
+    margin-right: 10px;
+}
+
+.icon-phone:before {
+    content: "\e942";
+    margin-right: 10px;
+}
+
+.icon-envelop:before {
+    content: "\e945";
+    margin-right: 10px;
+}
+
+.icon-youtube:before {
+    content: "\ea9d";
+    color: $corDeFundo1;
+}
+.icon-instagram:before {
+    content: "\ea92";
+    color: $corDeFundo1;
+}
+.icon-facebook:before {
+    content: "\ea90";
+    color: $corDeFundo1;
 }
 .boxRedesSociais{
     display: flex;
@@ -392,7 +423,124 @@ footer{
     flex-direction: column;
 }
 
+.boxdireita{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 95em;
+    height: 10em;
+    margin-top: 1em;
+}
+
+.redes{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-right: 4em;
+}
+
+.face{
+    width: 3em;
+    height: 3em;
+}
+
+.instagram{
+    width: 3em;
+    height: 3em;
+}
+
+.youtube{
+    width: 3em;
+    height: 3em;
+}
 .textodofooter{
     color: $corDeFundo1;
     margin-bottom: 3px;
 }
+
+
+/* Botão Hamburguer (esconde no desktop) */
+.hamburger {
+    font-size: 15px;
+    background: none;
+    border: none;
+    color: $corPrincipal;
+    cursor: pointer;
+    display: none; /* Só aparece no mobile */
+}
+
+/* ===== MENU DESKTOP ===== */
+.opcoes {
+    display: flex; /* Mostra sempre no desktop */
+}
+
+.menu {
+    display: flex;
+}
+
+.boxHeader {
+    padding: 15px;
+}
+
+.boxHeader a {
+    text-decoration: none;
+    display: block;
+    font-family: $fonteTitulo;
+    font-size: 1.5em;
+}
+
+.boxHeader a:hover {
+    color: $corPrincipal;
+}
+
+/* ===== MENU MOBILE ===== */
+.opcoes-mobile {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    background-color: $corDeFundo2;
+    display: none; /* Escondido por padrão */
+    flex-direction: column;
+    text-align: center;
+}
+
+.menu-mobile {
+    flex-direction: column;
+    padding: 10px;
+}
+
+/* Quando o menu mobile está ativo */
+.opcoes-mobile.active {
+    display: flex;
+}
+
+/* Mostrar o botão no mobile */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Exibe o botão hambúrguer */
+    }
+
+    .opcoes {
+        display: none; /* Esconde o menu desktop no mobile */
+    }
+
+    .close-menu {
+        display: none; /* O "X" começa invisível */
+        font-size: 15px;
+        background: none;
+        border: none;
+        color: $corPrincipal;
+        cursor: pointer;
+        text-align: end;
+        width: 100%;
+        margin-right: 1em;
+    }
+
+    /* Mostrar o "X" dentro do menu quando está aberto */
+    .opcoes-mobile.active .close-menu {
+        display: block;
+    }
+}
+

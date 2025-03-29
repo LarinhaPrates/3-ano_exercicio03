@@ -20,23 +20,49 @@
     <div class="container">
         <header>
             <h2>beauty <span>Salon</span>.</h2>
-            <div class="opcoes">
-                <div class="boxHeader">
-                    <h3>Inicio</h3>
-                </div>
-                <div class="boxHeader">
-                    <h3>Sobre</h3>
-                </div>
-                <div class="boxHeader">
-                    <h3>Serviços</h3>
-                </div>
-                <div class="boxHeader">
-                    <h3>Depoimentos</h3>
-                </div>
-                <div class="boxHeader">
-                    <h3>Contato</h3>
-                </div>
+            <button class="hamburger" id="hamburger">
+                <span class="icon-menu">☰</span>
+            </button>
+            <div class="opcoes-mobile" id="opcoes-mobile">
+                <nav class="menu-mobile" >
+                    <button id="close-menu" class="close-menu">✖</button>
+                    <div class="boxHeader">
+                        <a>Inicio</a>
+                    </div>
+                    <div class="boxHeader">
+                        <a>Sobre</a>
+                    </div>
+                    <div class="boxHeader">
+                        <a>Serviços</a>
+                    </div>
+                    <div class="boxHeader">
+                        <a>Depoimentos</a>
+                    </div>
+                    <div class="boxHeader">
+                        <a>Contato</a>
+                    </div>
+                </nav>
             </div>
+            <div class="opcoes" id="opcoes">
+                <nav class="menu" >
+                    <div class="boxHeader">
+                        <a>Inicio</a>
+                    </div>
+                    <div class="boxHeader">
+                        <a>Sobre</a>
+                    </div>
+                    <div class="boxHeader">
+                        <a>Serviços</a>
+                    </div>
+                    <div class="boxHeader">
+                        <a>Depoimentos</a>
+                    </div>
+                    <div class="boxHeader">
+                        <a>Contato</a>
+                    </div>
+                </nav>
+            </div>
+            
         </header>
         <main>
             <div class="boxPrincipal">
@@ -197,21 +223,19 @@
                             <p>críticas e sugestões.</p>
                         </div>
                         <div class="boxButton">
-                            <button>    <span class="icon-envelop"></span>
-                                Agendar um horario</button>
+                            <button><span class="icon-whatsapp"></span>Entrar em contato</button>
                         </div>
                     </div>
                 </div>
                 <div class="boxRedesSociais">
                     <div class="telefone">
-                        <p>11 99845-6754</p>
+                        <p><span class="icon-phone"></span>11 99845-6754</p>
                     </div>
                     <div class="loc">
-                        <p>R.Amauri Souza, 346</p>
+                        <p><span class="icon-location"></span>R.Amauri Souza, 346</p>
                     </div>
                     <div class="email">
-                        <p>    <span class="icon-envelop"></span>
-                            contato@beautysalon.com</p>
+                        <p><span class="icon-envelop"></span>contato@beautysalon.com</p>
                     </div>
                 </div>
             </div>
@@ -223,10 +247,22 @@
                 <h5 class="textodofooter">todos os direitos reservados.</h5>
             </div>
             <div class="boxdireita">
-                
+                <div class="redes">
+                    <div class="instagram">
+                        <span class="icon-instagram"></span>
+                    </div>
+                    <div class="face">
+                        <span class="icon-facebook"></span>
+                    </div>
+                    <div class="youtube">
+                        <span class="icon-youtube"></span>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
+
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>
